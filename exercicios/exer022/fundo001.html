@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagens de fundo</title>
+    <style>
+        body {
+            background-image: url(imagens/wallpaper006.jpg);
+            max-width: 500px;
+            margin: auto;
+        }
+
+        main {
+            margin: auto;
+        }
+        
+        div.quadrado {
+            display: block;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            background-color: lightgray;
+            margin: auto;
+        }
+
+        div#q1 {
+            background-color: skyblue;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, rgb(3, 3, 88), rgb(182, 182, 235));
+        }
+
+        div#q3 {
+            background-image: url(imagens/pattern001.png);
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Personalizando fundos</h1>
+        <p>Vimos no primeiro capítulo deste curso que uma das maneiras de personalizar o fundo do nosso site é usando o <strong>&lt;background-color&gt;</strong>.</p>
+        <div class="quadrado" id="q1">
+        </div>
+        <p>A segunda maneira para personalizarmos fundos é fazendo um degradê, usando a<strong> tag &lt;background-image&gt;</strong> com a função <strong>linear-gradient</strong>.</p>
+        <div class="quadrado" id="q2">
+        </div>
+        <p>Agora neste terceiro capítulo aprenderemos a usar imagens para fundos, que de certa forma é uma maneira <strong>NÃO semântica</strong>, é uma forma de estilizar o nosso site usando a mesma propriedade para fazer degradê <strong>&lt;background-image&gt;</strong> muda apenas a função, que é <strong>url</strong>.</p>
+        <div class="quadrado" id="q3">
+        </div>
+    </main>
+</body>
+</html>
