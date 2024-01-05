@@ -27,12 +27,12 @@ header {
     background-color: black;
     color: white;
     padding-top: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 40px;
 }
 
 header h1 {
     font-family: var(--fonte3);
-    text-shadow: 2px 2px 2px black;
+    font-size: 3em;
     padding-bottom: 20px;
     text-align: center;
 }
@@ -51,6 +51,10 @@ a {
     border-radius: 10px;
     font-weight: bold;
     transition-duration: 0.5s;
+}
+
+header nav {
+    margin-left: 20px;
 }
 
 a:hover {
@@ -83,11 +87,17 @@ main h2 {
     padding: 15px;
 }
 main p {
-    padding: 15px;
+    padding: 3px;
+    text-indent: 10px;
+}
+
+.espaco {
+    margin-bottom: 20px;
 }
 
 main img {
     width: 100%;
+    margin: 10px 0px;
 }
 
 main aside {
@@ -108,8 +118,7 @@ main a {
 main > section {
     background-color: lightgrey;
     border-radius: 20px;
-    padding: 0px 10px;
-    margin-top: 20px;
+    padding: 0px 10px 10px 10px;
 }
 
 section > h2 {
@@ -118,6 +127,15 @@ section > h2 {
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
     margin-bottom: 20px;
+}
+
+#fotolink {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: auto; 
+    padding-top: 0px;
+    padding-bottom: 20px;
 }
 
 aside > h1 {
