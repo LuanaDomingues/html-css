@@ -10,7 +10,7 @@
         }
 
         table {
-            width: 400px;
+            width: 600px;
             border-collapse: collapse;
         }
 
@@ -24,11 +24,28 @@
 
         td {
             border: 1px solid black;
-            padding: 10px;
+            padding: 5px;
         }
 
         .num {
             text-align: center;
+        }
+
+        #media {
+            text-align: left;
+        }
+
+        .materia {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+
+        .result {
+            text-align: center;
+            background-color: darkgray;
+            color: white;
+            font-weight: bold;
         }
 
         tfoot {
@@ -40,21 +57,21 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
             </tr>
 
             <tr> 
-                <th>Nota 1</th>
-                <th>Nota 2</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
         </thead>
 
         <tbody> 
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup" class="materia">Exatas</th>
                 <td>Matemática</td>
                 <td class="num">0.0</td>
                 <td class="num">0.0</td>
@@ -81,32 +98,30 @@
             <td class="num">0.0</td>
             <td class="num">0.0</td>
            </tr>
-        </tbody>
 
-        <tfoot>
-            <th colspan="4">Média de exatas</th>
-            <td>0.0</td>
-        </tfoot>
-    
-        <tr>
-            <th rowspan="2">Humanas</th>
-            <td>História</td>
-            <td>0.0</td>
-            <td>0.0</td>
-            <td>0.0</td>
-        </tr>
-
-        <tr>
-            <td>História</td>
-            <td>0.0</td>
-            <td>0.0</td>
-            <td>0.0</td>
-        </tr>
-
-        <tfoot>
-            <th colspan="4">Média de humanas</th>
-            <td>0.0</td>
-        </tfoot>
+           <tr id="media">
+            <th colspan="4" scope="
+            row">Média de exatas</th>
+            <td class="result">0.0</td>
+           </tr>
+        
+            <tr>
+                <th rowspan="2" scope="rowgroup" class="materia">Humanas</th>
+                <td>História</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>História</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tfoot>
+                <th colspan="4" scope="row">Média de humanas</th>
+                <td class="result">0.0</td>
+            </tfoot>
         </table>
 </body>
 </html>
