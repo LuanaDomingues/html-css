@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"rel="stylesheet"/>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
-
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -28,10 +30,27 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, incidunt porro in, dolore rem consequatur sapiente, quod consequuntur doloribus et quibusdam esse obcaecati aut debitis doloremque officiis recusandae minima expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, aliquam vitae incidunt itaque, aperiam tenetur reiciendis quae iusto molestiae inventore cupiditate consequatur voluptatibus maiores voluptas unde sed odit! Tenetur, sapiente?</p>
 
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam tempora necessitatibus ipsam distinctio, quis doloribus repellendus numquam! Eaque quis sunt explicabo quae! Quidem libero hic iure earum labore minus eligendi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quam molestiae voluptatibus nam molestias non quasi cumque laudantium dolores officia amet repellendus, corrupti, nesciunt, eaque illo eius! Rem, reprehenderit ipsam.</p>
-
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae tempore autem placeat sit facere, vel laborum nulla vitae voluptatum, omnis cumque corporis itaque reprehenderit velit odit, maxime ad est quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nulla voluptate enim velit quaerat. Non, aperiam. Debitis totam iure omnis. Voluptatum dolores ab obcaecati, aliquam eum tempore repellendus rerum iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nihil impedit nobis ad laudantium quasi ex facere aut commodi beatae odit illum adipisci! Earum enim aspernatur sequi quisquam ab exercitationem?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ut ducimus, porro optio quaerat, error laborum id nihil voluptates est assumenda recusandae labore et qui! Consectetur minus tenetur quod saepe.</p>
+            
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia quis aliquam ex nostrum itaque delectus impedit accusantium, similique aspernatur nemo labore, autem quae recusandae? Accusantium repellendus cupiditate aut suscipit temporibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolore, illo architecto quis, debitis reprehenderit, totam voluptas temporibus magni suscipit quia nesciunt? Eveniet eius et modi nisi id voluptates ducimus.</p>
         </article>
     </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else {
+                itens.style.display = 'block'
+            }
+
+            }
+    </script>
 </body>
 </html>
