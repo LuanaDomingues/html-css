@@ -13,16 +13,6 @@
         display: inline-block; 
     }
 
-    menu > ul > li > a {
-        background-color: black;
-        color: white;
-    }
-
-    menu > ul > li > a:hover {
-        background-color: white;
-        color: black;
-    }
-
     main {
         width: 768px;
     }
